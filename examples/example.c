@@ -142,7 +142,7 @@ UBYTE Display_CharacterPattern_Example(UWORD Panel_Width, UWORD Panel_Height, UD
             //Paint_DrawRectangle(x, y, x+Display_Area_Sub_Width, y+Display_Area_Sub_Height, 0x00, DOT_PIXEL_3X3, DRAW_FILL_EMPTY);
             //Paint_DrawCircle(x + Display_Area_Sub_Width/2, y + Display_Area_Sub_Height/2, Display_Area_Sub_Height/2, 0x50, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
             //Paint_DrawNum(x+Display_Area_Sub_Width*3/10, y+Display_Area_Sub_Height*1/4, 1234567890, &Font16, 0x20, 0xE0);
-            Paint_DrawString_EN(x+Display_Area_Sub_Width*3/10, y+Display_Area_Sub_Height*3/4, "hello world", &Font16, 0x20, 0xE0);
+            Paint_DrawString_CN(x+Display_Area_Sub_Width*3/10, y+Display_Area_Sub_Height*3/4, "ÓÎÓÅÐ¡½ãÄãºÃ£¡", &Font24CN, 0x20, 0xE0);
         }
     }
 
@@ -869,7 +869,7 @@ void Color_Test(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memory_Addr)
 			Paint_DrawString_EN(1000, 600, "Hello, World!", &Font24, 0x0a5a, 0x0fff);
 			Paint_DrawString_EN(1000, 700, "Hello, World!", &Font24, 0x05aa, 0x0fff);
 
-			Paint_DrawString_CN(700, 400, "ï¿½ï¿½ï¿½ Î¢Ñ©ï¿½ï¿½ï¿½ï¿½", &Font24CN, 0x00fa, 0x0000);
+			Paint_DrawString_CN(700, 400, "??? ??????", &Font24CN, 0x00fa, 0x0000);
 			Paint_DrawNum(700, 500, 123456789, &Font24, 0x0a0f, 0x0fff);
 			Paint_DrawTime(700, 600, &Time, &Font24, 0x0fa0, 0x0fff);
 		}else {
