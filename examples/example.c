@@ -113,8 +113,8 @@ UBYTE Display_CharacterPattern_Example(UWORD Panel_Width, UWORD Panel_Height, UD
     }
     UWORD Display_Area_Height = Panel_Height;
 
-    UWORD Display_Area_Sub_Width = Display_Area_Width / 5;
-    UWORD Display_Area_Sub_Height = Display_Area_Height / 5;
+    UWORD Display_Area_Sub_Width = Display_Area_Width / 2;
+    UWORD Display_Area_Sub_Height = Display_Area_Height / 2;
 
     UDOUBLE Imagesize;
 
