@@ -142,7 +142,7 @@ UBYTE Display_CharacterPattern_Example(UWORD Panel_Width, UWORD Panel_Height, UD
             //Paint_DrawRectangle(x, y, x+Display_Area_Sub_Width, y+Display_Area_Sub_Height, 0x00, DOT_PIXEL_3X3, DRAW_FILL_EMPTY);
             //Paint_DrawCircle(x + Display_Area_Sub_Width/2, y + Display_Area_Sub_Height/2, Display_Area_Sub_Height/2, 0x50, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
             //Paint_DrawNum(x+Display_Area_Sub_Width*3/10, y+Display_Area_Sub_Height*1/4, 1234567890, &Font16, 0x20, 0xE0);
-            Paint_DrawString_EN(x+Display_Area_Sub_Width*3/10, y+Display_Area_Sub_Height*3/4, "hello world", &Font16, 0x30, 0xD0);
+            Paint_DrawString_EN(x+Display_Area_Sub_Width*3/10, y+Display_Area_Sub_Height*3/4, "hello world", &Font16, 0x20, 0xE0);
         }
     }
 
