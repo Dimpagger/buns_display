@@ -120,14 +120,9 @@ int main(int argc, char *argv[])
         A2_Mode = 6;
     }
     Debug("A2 Mode:%d\r\n", A2_Mode);
-
 	EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
 
-
 #if(USE_Normal_Demo)
-    //Show 16 grayscale
-    Display_ColorPalette_Example(Panel_Width, Panel_Height, Init_Target_Memory_Addr);
-	EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, GC16_Mode);
 
     //Show some character and pattern
     Debug("文字展示测试");
@@ -136,9 +131,6 @@ int main(int argc, char *argv[])
     EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, GC16_Mode);
 
 #endif
-
-    //We recommended refresh the panel to white color before storing in the warehouse.
-    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
 
     //EPD_IT8951_Standby();
     EPD_IT8951_Sleep();
