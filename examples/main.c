@@ -127,8 +127,7 @@ int main(int argc, char *argv[])
     //Show some character and pattern
     Debug("文字展示测试");
     Display_CharacterPattern_Example(Panel_Width, Panel_Height, Init_Target_Memory_Addr, BitsPerPixel_4);
-    DEV_Delay_ms(5000);
-    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, GC16_Mode);
+    DEV_Delay_ms(10000);
 
 #endif
 
