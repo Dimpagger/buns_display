@@ -208,7 +208,7 @@ UBYTE Display_BMP_Example(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Ta
     Paint_Clear(WHITE);
 
     char Path[30];
-    sprintf(Path,"~/code/image.bmp");
+    sprintf(Path,"/pic/image.bmp");
 
     GUI_ReadBmp(Path, 0, 0);
 
